@@ -1,0 +1,57 @@
+<div class="auth-container">
+    <div class="login-form">
+        <h2>Login</h2>
+        <form class="login">
+            <!-- Login form fields -->
+            <div class="dashboard-container">
+                <div class="dashboard-title">
+                    <span>Login
+                </div>
+                <div class="dashboard-body">
+                    {{#if messages.error}}
+                    {{messages.error}}
+                    {{/if}}
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="input">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="input">
+                    </div>
+                    <button class="btn" type="submit">Login</button>
+                    <div style="margin-top: 20px;">
+                        <a href="/signup" id="toggle-signup">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form class="signup">
+            <!-- Signup form fields -->
+            <div class="dashboard-body" id="signup-form">
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="signup-username" class="input">
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="text" id="signup-email" name="signup-email" class="input">
+                </div>
+
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" class="input">
+                </div>
+                <button class="btn" type="submit">Sign Up</button>
+                {{!-- <div style="margin-top: 20px;">
+                    <a href="/login">Login</a>
+                </div> --}}
+            </div>
+        </form>
+    </div>
+</div>
